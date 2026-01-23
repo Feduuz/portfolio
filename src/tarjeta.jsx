@@ -64,33 +64,36 @@ export const Scroll = ({ visible }) => {
 
 export const Proyectos = () => {
   return (
-  <>
-  <div class="tarjeta">
-    <img src="./src/assets/captura1.png" alt="Proyecto Chatbot" />
+    <section className="projects-section">
 
-    <div class="textBox">
-      <h1 class="text head">Chatbot</h1>
-      <p class="text price">Python + NLP + LLM</p>
-    </div>
-  </div>
+      <h2 className="projects-title">PROJECTS</h2>
 
-  <div class="tarjeta">
-    <img src="./src/assets/captura2.png" alt="Proyecto Inmobiliaria" />
+      <div className="projects-cards">
+        <div className="tarjeta">
+          <img src="./src/assets/captura1.png" alt="Proyecto Chatbot" />
+          <div className="textBox">
+            <h1 className="text head">Chatbot</h1>
+            <p className="text p">Python + NLP + LLM</p>
+          </div>
+        </div>
 
-    <div class="textBox">
-      <h1 class="text head">Inmobiliaria</h1>
-      <p class="text price">HTML + CSS + JavaScript</p>
-    </div>
-  </div>
+        <div className="tarjeta">
+          <img src="./src/assets/captura2.png" alt="Proyecto Inmobiliaria" />
+          <div className="textBox">
+            <h1 className="text head">Inmobiliaria</h1>
+            <p className="text p">HTML + CSS + JavaScript</p>
+          </div>
+        </div>
 
-    <div class="tarjeta">
-    <img src="./src/assets/captura3.png" alt="Proyecto Videojuego 2D" />
+        <div className="tarjeta">
+          <img src="./src/assets/captura3.png" alt="Proyecto Videojuego 2D" />
+          <div className="textBox">
+            <h1 className="text head">Videojuego 2D</h1>
+            <p className="text price">Godot 4</p>
+          </div>
+        </div>
+      </div>
 
-    <div class="textBox">
-      <h1 class="text head">Videojuego 2D</h1>
-      <p class="text price">Godot 4</p>
-    </div>
-  </div>
-  </>
+    </section>
   );
 }

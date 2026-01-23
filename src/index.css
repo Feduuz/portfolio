@@ -453,7 +453,6 @@ figure {
 
 .projects {
   min-height: 100vh;
-  padding: 120px 80px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -462,8 +461,8 @@ figure {
 
 
 .tarjeta {
-  width: 400px;
-  height: 275px;
+  width: 30%;
+  height: 315px;
   background: #edededcc;
   border-radius: 20px;
   position: relative;
@@ -497,14 +496,14 @@ figure {
 }
 
 .textBox .head {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 700;
-  color: #2b2b2b;
+  color: #dbdbdb;
 }
 
-.textBox .price {
-  font-size: 1rem;
-  color: #555;
+.textBox .p {
+  font-size: 1.5rem;
+  color: #dbdbdb;
 }
 
 .tarjeta:hover {
@@ -518,4 +517,29 @@ figure {
 .tarjeta:hover img {
   transform: translateY(-15px);
   filter: blur(6px);
+}
+
+.projects-section {
+  min-height: 50vh;
+  padding: 120px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.projects-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #dbdbdb;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.projects-cards {
+  width: 200%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 60px;
 }
