@@ -3,6 +3,9 @@ import { SocialLinks } from "./sociallinks.jsx";
 
 export const Tarjeta = () => {
   return (
+  <section className="about-section">
+    <h2 className="about-title">ABOUT ME</h2>
+
     <div className="cards-wrapper">
 
       <div className="uiverse-card">
@@ -17,7 +20,7 @@ export const Tarjeta = () => {
           </div>
 
           <div className="bottom-bottom">
-            <button className="contact-btn">Contact me</button>
+            <button className="contact-btn" onClick={() => window.location.href = "https://mail.google.com/mail/?view=cm&to=federico.mbv@gmail.com"}>Contact me</button>
           </div>
         </div>
       </div>
@@ -32,8 +35,8 @@ export const Tarjeta = () => {
             <li className="tag__name">JavaScript</li>
             <li className="tag__name">Python</li>
             <li className="tag__name">SpringBoot</li>
-            <li className="tag__name">NodeJS</li>
-            <li className="tag__name">IA</li>
+            <li className="tag__name">Node.JS</li>
+            <li className="tag__name">AI</li>
             <li className="tag__name">LLM</li>
             <li className="tag__name">HTML</li>
             <li className="tag__name">CSS</li>
@@ -48,6 +51,7 @@ export const Tarjeta = () => {
         </div>
       </div>
     </div>
+  </section>
   );
 };
 
@@ -69,7 +73,7 @@ export const Proyectos = () => {
       <h2 className="projects-title">PROJECTS</h2>
 
       <div className="projects-cards">
-        <div className="tarjeta">
+        <div className="tarjeta"  onClick={() => window.open("https://github.com/Feduuz/Chatbot", "_blank")}>
           <img src="./src/assets/captura1.png" alt="Proyecto Chatbot" />
           <div className="textBox">
             <h1 className="text head">Chatbot</h1>
@@ -77,19 +81,19 @@ export const Proyectos = () => {
           </div>
         </div>
 
-        <div className="tarjeta">
+        <div className="tarjeta" onClick={() => window.open("https://github.com/Feduuz/Inmobiliaria", "_blank")}>
           <img src="./src/assets/captura2.png" alt="Proyecto Inmobiliaria" />
           <div className="textBox">
-            <h1 className="text head">Inmobiliaria</h1>
+            <h1 className="text head">Real Estate</h1>
             <p className="text p">HTML + CSS + JavaScript</p>
           </div>
         </div>
 
-        <div className="tarjeta">
+        <div className="tarjeta" onClick={() => window.open("https://github.com/RamiroGarro/proyectoJuegoPlataformas2d", "_blank")}>
           <img src="./src/assets/captura3.png" alt="Proyecto Videojuego 2D" />
           <div className="textBox">
-            <h1 className="text head">Videojuego 2D</h1>
-            <p className="text price">Godot 4</p>
+            <h1 className="text head">Videogame 2D</h1>
+            <p className="text p">Godot 4</p>
           </div>
         </div>
       </div>

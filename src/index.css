@@ -3,7 +3,6 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
   color: (255, 255, 255, 0.87);
   background-color: #242424;
 
@@ -67,74 +66,9 @@ body.dark {
   color: rgba(255, 255, 255, 0.87);
 }
 
-body.light {
-  color: #213547;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-
 figure {
   margin: 0;
   padding: 0;
-}
-
-.theme-switch {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 10;
-}
-
-.theme-checkbox {
-  --toggle-size: 30px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  width: 70px;
-  height: 42px;
-  background: linear-gradient(to right, #2a2a2a 50%, #efefef 50%) no-repeat;
-  background-size: 205%;
-  background-position: 0;
-  transition: 0.4s;
-  border-radius: 99em;
-  position: relative;
-  cursor: pointer;
-  font-size: var(--toggle-size);
-}
-
-.theme-checkbox::before {
-  content: "";
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  top: 9px;
-  left: 9px;
-  background: #0f0f0f;
-  background-size: 205%;
-  background-position: 100%;
-  border-radius: 50%;
-  transition: 0.4s;
-}
-
-.theme-checkbox:checked::before {
-  left: 37px;
-  background: #ffffff;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-}
-
-.theme-checkbox:checked {
-  background-position: 100%;
 }
 
 
@@ -144,7 +78,7 @@ figure {
   justify-content: center;
   gap: 225px;
   width: 100%;
-  min-height: 100vh;
+  min-height: 60vh;
 }
 
 .cards {
@@ -296,6 +230,20 @@ figure {
   }
 }
 
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #dbdbdb;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
 
 .uiverse-card {
   width: 500px;
@@ -445,14 +393,14 @@ figure {
 }
 
 .hero {
-  min-height: 100vh;
+  min-height: 85vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .projects {
-  min-height: 100vh;
+  min-height: 84vh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -467,12 +415,11 @@ figure {
   border-radius: 20px;
   position: relative;
   overflow: hidden;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   transition: transform 0.25s ease;
+  cursor: pointer;
 }
 
 .tarjeta img {
@@ -487,22 +434,19 @@ figure {
   z-index: 2;
   text-align: center;
   opacity: 0;
-
   display: flex;
   flex-direction: column;
-  gap: 10px;
-
   transition: opacity 0.25s ease;
 }
 
 .textBox .head {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   font-weight: 700;
   color: #dbdbdb;
 }
 
 .textBox .p {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: #dbdbdb;
 }
 
@@ -542,4 +486,27 @@ figure {
   justify-content: space-evenly;
   align-items: center;
   gap: 60px;
+}
+
+
+.footer {
+  width: 100%;
+  padding: 40px 0 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-line {
+  width: 80%;
+  max-width: 900px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-text {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.75);
 }
