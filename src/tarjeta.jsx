@@ -1,4 +1,7 @@
 import foto from "./assets/foto.jpg";
+import captura1 from "./assets/captura1.png";
+import captura2 from "./assets/captura2.png";
+import captura3 from "./assets/captura3.png";
 import { SocialLinks } from "./sociallinks.jsx";
 
 export const Tarjeta = () => {
@@ -74,7 +77,7 @@ export const Proyectos = () => {
 
       <div className="projects-cards">
         <div className="tarjeta"  onClick={() => window.open("https://github.com/Feduuz/Chatbot", "_blank")}>
-          <img src="./src/assets/captura1.png" alt="Proyecto Chatbot" />
+          <img src={captura1} />
           <div className="textBox">
             <h1 className="text head">Chatbot</h1>
             <p className="text p">Python + NLP + LLM</p>
@@ -82,7 +85,7 @@ export const Proyectos = () => {
         </div>
 
         <div className="tarjeta" onClick={() => window.open("https://github.com/Feduuz/Inmobiliaria", "_blank")}>
-          <img src="./src/assets/captura2.png" alt="Proyecto Inmobiliaria" />
+          <img src={captura2} />
           <div className="textBox">
             <h1 className="text head">Real Estate</h1>
             <p className="text p">HTML + CSS + JavaScript</p>
@@ -90,7 +93,7 @@ export const Proyectos = () => {
         </div>
 
         <div className="tarjeta" onClick={() => window.open("https://github.com/RamiroGarro/proyectoJuegoPlataformas2d", "_blank")}>
-          <img src="./src/assets/captura3.png" alt="Proyecto Videojuego 2D" />
+          <img src={captura3} />
           <div className="textBox">
             <h1 className="text head">Videogame 2D</h1>
             <p className="text p">Godot 4</p>
