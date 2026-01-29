@@ -27,7 +27,7 @@ El sitio fue desarrollado como una **Single Page Application** utilizando tecnol
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/tu-usuario/tu-repo.git
+git clone https://github.com/Feduuz/portfolio
 
 # Entrar al proyecto
 cd portafolio
