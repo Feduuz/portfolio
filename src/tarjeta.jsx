@@ -45,11 +45,13 @@ export const Tarjeta = () => {
             <li className="tag__name">CSS</li>
             <li className="tag__name">Git</li>
             <li className="tag__name">MySQL</li>
+            <li className="tag__name">Hana</li>
             <li className="tag__name">MongoDB</li>
             <li className="tag__name">API</li>
             <li className="tag__name">Postman</li>
             <li className="tag__name">Office</li>
             <li className="tag__name">Hardware</li>
+            <li className="tag__name">SAP</li>
           </ul>
         </div>
       </div>
@@ -76,10 +78,10 @@ export const Proyectos = () => {
       <h2 className="projects-title">PROJECTS</h2>
 
       <div className="projects-cards">
-        <div className="tarjeta"  onClick={() => window.open("https://github.com/Feduuz/Chatbot", "_blank")}>
+        <div className="tarjeta"  onClick={() => window.open("https://github.com/Feduuz/Chatbot-Online", "_blank")}>
           <img src={captura1} />
           <div className="textBox">
-            <h1 className="text head">Chatbot</h1>
+            <h1 className="text head">Chatbot Online</h1>
             <p className="text p">Python + NLP + LLM</p>
           </div>
         </div>
